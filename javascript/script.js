@@ -32,3 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+    document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu'); // Seleciona o botão
+            const navList = document.querySelector('.nav-list');             // Seleciona a lista do menu
+
+            if (hamburgerMenu && navList) {
+                hamburgerMenu.addEventListener('click', () => { // Quando o botão é clicado...
+                    navList.classList.toggle('active');         // ...o JS adiciona/remove a classe 'active' na lista do menu (para mostrar/esconder o menu)
+                    hamburgerMenu.classList.toggle('open');     // ...e o JS adiciona/remove a classe 'open' no próprio botão do hambúrguer (para animar as linhas)
+                });
+                // ... código para fechar o menu ao clicar em um link
+            }
+        });
