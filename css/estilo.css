@@ -1,15 +1,15 @@
+/* :root estilo geral */
 
-/* Estilos Gerais */
 :root {
-    --primary-color: #2935da; 
-    --secondary-color: #030708; 
-    --accent-color: #cfe6ff; 
+    --primary-color: #2935da;
+    --secondary-color: #030708;
+    --accent-color: #cfe6ff;
     --text-color: #333;
     --light-text-color: #666;
     --bg-color: #f8f8f8;
     --card-bg: #fff;
     --border-color: #eee;
-    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -22,12 +22,11 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Aumentado para melhor visualização em desktop */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header */
 header {
     background-color: var(--primary-color);
     color: #fff;
@@ -39,7 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -51,7 +50,6 @@ header {
     margin-right: 20px;
 }
 
-/* Navegação Principal */
 .main-nav {
     flex-grow: 1;
     text-align: right;
@@ -62,11 +60,11 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-end; /* Alinha itens à direita */
+    justify-content: flex-end;
 }
 
 .nav-list li {
-    margin-left: 25px; /* Espaçamento entre os itens do menu */
+    margin-left: 25px;
 }
 
 .nav-list a {
@@ -82,15 +80,18 @@ header {
     text-decoration: underline;
 }
 
-/* Hamburger Menu (Oculto por padrão em desktop) */
+
+/* menu hamburger */
+
 .hamburger-menu {
-    display: none; /* Oculto por padrão */
+    display: none;
+    /* Oculto por padrão */
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
     position: relative;
-    z-index: 1001; /* Garante que fique acima de outros elementos */
+    z-index: 1001;
 }
 
 .hamburger-menu span {
@@ -102,10 +103,9 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Main Content Area para index.html */
 .main-content-area {
     display: flex;
-    gap: 30px; /* Espaçamento entre as colunas */
+    gap: 30px;
     margin-top: 30px;
     background-color: var(--card-bg);
     padding: 20px;
@@ -130,7 +130,7 @@ header {
 }
 
 .articles-grid {
-    flex: 3; /* Ocupa 3/4 do espaço */
+    flex: 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -177,7 +177,7 @@ header {
 }
 
 .related-content {
-    flex: 1; /* Ocupa 1/4 do espaço */
+    flex: 1;
     background-color: var(--accent-color);
     padding: 20px;
     border-radius: 8px;
@@ -215,7 +215,6 @@ header {
     text-decoration: underline;
 }
 
-/* Estilos para outras páginas (acontecimentos, personalidades, movimentos, videos) */
 .page-content {
     background-color: var(--card-bg);
     padding: 30px;
@@ -248,8 +247,9 @@ header {
     padding-left: 15px;
 }
 
-/* Cards de Eventos/Personalidades/Movimentos */
-.event-card, .person-card, .movement-card {
+.event-card,
+.person-card,
+.movement-card {
     display: flex;
     background-color: var(--card-bg);
     margin-bottom: 20px;
@@ -261,35 +261,40 @@ header {
     gap: 20px;
 }
 
-.event-card img, .person-card img, .movement-card img {
-    max-width: 180px; /* Largura fixa para imagens em cards */
+.event-card img,
+.person-card img,
+.movement-card img {
+    max-width: 180px;
     height: auto;
     border-radius: 4px;
     object-fit: cover;
-    flex-shrink: 0; /* Previne que a imagem encolha */
+    flex-shrink: 0;
 }
 
 .person-card img {
-    border-radius: 50%; /* Imagens redondas para personalidades */
+    border-radius: 50%;
     width: 120px;
     height: 120px;
 }
 
-.event-card h3, .person-card h3, .movement-card h3 {
+.event-card h3,
+.person-card h3,
+.movement-card h3 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 1.4em;
     color: var(--primary-color);
     margin: 0 0 10px 0;
 }
 
-.event-card p, .person-card p, .movement-card p {
+.event-card p,
+.person-card p,
+.movement-card p {
     font-size: 1em;
     color: var(--text-color);
     text-align: justify;
     margin: 0;
 }
 
-/* Videos Page */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -307,7 +312,7 @@ header {
 
 .video-item iframe {
     width: 100%;
-    height: 200px; /* Altura fixa para os vídeos */
+    height: 200px;
     display: block;
     border: none;
 }
@@ -326,8 +331,6 @@ header {
     text-align: justify;
 }
 
-
-/* Contact Form */
 .contact-form {
     background-color: var(--card-bg);
     padding: 30px;
@@ -356,7 +359,7 @@ header {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     font-size: 1em;
-    box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+    box-sizing: border-box;
     transition: border-color 0.3s ease;
 }
 
@@ -368,7 +371,7 @@ header {
 }
 
 .form-group textarea {
-    resize: vertical; /* Permite redimensionar verticalmente */
+    resize: vertical;
     min-height: 100px;
 }
 
@@ -406,7 +409,6 @@ header {
     background-color: #e0e0e0;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
@@ -414,193 +416,163 @@ footer {
     background-color: #eee;
     color: var(--light-text-color);
     font-size: 0.85em;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* ===================================== */
-/* Responsividade */
-/* ===================================== */
-
-/* Tablet (768px - 1023px) */
 @media (max-width: 1023px) {
     .container {
         padding: 15px;
     }
-
     .main-nav {
         text-align: center;
         width: 100%;
-        order: 1; /* Coloca a navegação abaixo do logo em telas menores */
+        order: 1;
     }
-
     .nav-list {
         justify-content: center;
         margin-top: 15px;
     }
-
     .nav-list li {
         margin: 0 10px;
     }
-
     .main-content-area {
-        flex-direction: column; /* Colunas empilhadas */
+        flex-direction: column;
     }
-
     .articles-grid {
-        grid-template-columns: 1fr; /* Uma coluna para cards */
+        grid-template-columns: 1fr;
     }
-
     .related-content {
         margin-top: 30px;
     }
-
-    .event-card, .person-card, .movement-card {
-        flex-direction: column; /* Imagem e texto empilhados */
+    .event-card,
+    .person-card,
+    .movement-card {
+        flex-direction: column;
         text-align: center;
     }
-
-    .event-card img, .person-card img, .movement-card img {
+    .event-card img,
+    .person-card img,
+    .movement-card img {
         margin-bottom: 15px;
-        max-width: 100%; /* Imagens maiores para destaque */
+        max-width: 100%;
         height: auto;
     }
-
     .person-card img {
         width: 150px;
         height: 150px;
     }
 }
 
-/* Smartphone (480px - 767px) */
 @media (max-width: 767px) {
     .logo {
         font-size: 1.5em;
     }
-
     .hamburger-menu {
-        display: block; /* Mostra o menu hambúrguer */
+        display: block;
         position: absolute;
         right: 15px;
         top: 15px;
     }
-
     .nav-list {
-        display: none; /* Oculta a lista de navegação padrão */
+        display: none;
         flex-direction: column;
         width: 100%;
         background-color: var(--secondary-color);
         position: absolute;
-        top: 60px; /* Abaixo do cabeçalho */
+        top: 60px;
+        /* Abaixo do cabeçalho */
         left: 0;
         padding: 20px 0;
         box-shadow: var(--shadow);
         text-align: center;
-        height: calc(100vh - 60px); /* Altura total da viewport menos o cabeçalho */
-        overflow-y: auto; /* Permite scroll se o menu for muito longo */
+        height: calc(100vh - 60px);
+        overflow-y: auto;
     }
-
     .nav-list.active {
-        display: flex; /* Mostra o menu quando ativo */
+        display: flex;
     }
-
     .nav-list li {
         margin: 15px 0;
     }
-
     .nav-list a {
         font-size: 1.2em;
         display: block;
         padding: 10px;
     }
-
     .welcome-article h1 {
         font-size: 1.8em;
     }
-
     .page-content h1 {
         font-size: 2em;
     }
-
     .category-section h2 {
         font-size: 1.5em;
         padding-left: 10px;
     }
-
-    .event-card, .person-card, .movement-card {
+    .event-card,
+    .person-card,
+    .movement-card {
         padding: 10px;
     }
-
     .video-item iframe {
         height: 180px;
     }
-
     .form-buttons {
         display: flex;
-        flex-direction: column-reverse; /* Botões empilhados, enviar em cima */
+        flex-direction: column-reverse;
         gap: 10px;
     }
-
     .btn {
         width: 100%;
         margin-left: 0;
     }
 }
 
-/* Smartphone Pequeno (320px - 479px) */
 @media (max-width: 479px) {
     .container {
         padding: 10px;
     }
-
     header {
         padding: 10px 0;
     }
-
     .logo {
         font-size: 1.3em;
     }
-
     .hamburger-menu {
         top: 10px;
         right: 10px;
     }
-
     .nav-list {
         top: 50px;
         height: calc(100vh - 50px);
     }
-
     .welcome-article h1 {
         font-size: 1.5em;
     }
-
     .page-content h1 {
         font-size: 1.8em;
     }
-
     .category-section h2 {
         font-size: 1.3em;
     }
-
-    .event-card img, .person-card img, .movement-card img {
-        max-width: 80%; /* Ajuste para imagens ainda menores */
+    .event-card img,
+    .person-card img,
+    .movement-card img {
+        max-width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-
     .person-card img {
         width: 100px;
         height: 100px;
     }
-
     .video-item iframe {
         height: 150px;
     }
 }
 
-/* Desktop (1366px+) - Ajustes adicionais se necessário */
 @media (min-width: 1366px) {
     .container {
-        max-width: 1400px; /* Maior largura para desktops maiores */
+        max-width: 1400px;
     }
 }
