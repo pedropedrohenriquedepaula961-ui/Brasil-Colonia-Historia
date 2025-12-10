@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Brasil Colônia</title>
+    <meta name="description" content="Entre em contato com a equipe do portal Brasil Colônia para dúvidas, sugestões ou parcerias.">
+    <meta name="keywords" content="contato, formulário, feedback, sugestões, história, Brasil Colônia">
+    <link rel="shortcut icon" href="imagens/imagem do favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Brasil Colônia</a>
+            <nav class="main-nav">
+                <button class="hamburger-menu" aria-label="Abrir Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="acontecimentos.html">Acontecimentos</a></li>
+                    <li><a href="personalidades.html">Personalidades</a></li>
+                    <li><a href="movimentos.html">Movimentos Sociais</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h1>Fale Conosco</h1>
+        <p>Preencha o formulário abaixo para enviar suas dúvidas, sugestões ou entrar em contato com a nossa equipe.</p>
+
+        <form action="processa.html" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required maxlength="100">
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required maxlength="150">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required maxlength="500"></textarea>
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Criadores: [Pedro Henrique de Paula Cruz 
+                            & Vitor Henrique Larsen Ortiz ]</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
