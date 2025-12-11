@@ -85,7 +85,6 @@ header {
 
 .hamburger-menu {
     display: none;
-    /* Oculto por padrão */
     background: none;
     border: none;
     cursor: pointer;
@@ -480,7 +479,6 @@ footer {
         background-color: var(--secondary-color);
         position: absolute;
         top: 60px;
-        /* Abaixo do cabeçalho */
         left: 0;
         padding: 20px 0;
         box-shadow: var(--shadow);
